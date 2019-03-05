@@ -1,0 +1,22 @@
+.btn {
+  background: $primary-color;
+  padding: .5rem 1rem;
+  display: inline-block;
+  color: $white;
+  border: 0;
+  text-decoration: none;
+
+  &:link {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $light-blue;
+  }
+
+  &--wide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

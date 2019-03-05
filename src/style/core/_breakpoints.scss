@@ -1,0 +1,69 @@
+$breakpoint-large: 1024;
+$breakpoint-medium: 820;
+$breakpoint-small: 620;
+
+$small-plus-one: $breakpoint-small+1;
+$medium-plus-one: $breakpoint-medium+1;
+$large-plus-one: $breakpoint-large+1;
+
+$rem-small: rem-calc($breakpoint-small);
+$rem-medium: rem-calc($breakpoint-medium);
+$rem-large: rem-calc($breakpoint-large);
+
+$rem-small-plus-one: rem-calc($small-plus-one);
+$rem-medium-plus-one: rem-calc($medium-plus-one);
+$rem-large-plus-one: rem-calc($large-plus-one);
+
+@mixin breakpoint($point) {
+    @if $point == 'small' {
+        @media all and (max-width: #{$rem-small}) {
+          @content;
+        }
+    }
+    @if $point == 'medium-down' {
+        @media all and (max-width: #{$rem-medium}) {
+            @content;
+        }
+    }
+    @if $point == 'medium' {
+        @media all and (min-width: #{$rem-small-plus-one}) and (max-width: #{$rem-large}) {
+            @content;
+        }
+    }
+    @if $point == 'medium-up' {
+        @media all and (min-width: #{$rem-small-plus-one}) {
+            @content;
+        }
+    }
+    @if $point == 'large-down' {
+        @media all and (max-width: #{$rem-large}) {
+            @content;
+        }
+    }
+    @if $point == 'large' {
+        @media all and (min-width: #{$rem-medium-plus-one}) and (max-width: #{$rem-large}) {
+            @content;
+        }
+    }
+    @if $point == 'large-up' {
+        @media all and (min-width: #{$rem-medium-plus-one}) {
+            @content;
+        }
+    }
+    @if $point == 'xlarge' {
+        @media all and (min-width: #{$rem-large-plus-one}) {
+            @content;
+        }
+    }
+}
+
+/*
+Usage:
+
+.thing {
+    width: 50%;
+    @include breakpoint(small) {
+        width: 100%;
+    }
+}
+*/

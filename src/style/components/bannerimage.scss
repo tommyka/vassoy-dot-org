@@ -1,0 +1,15 @@
+.banner{
+  &--image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  &--post {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    margin-bottom: 4rem;
+  }
+}

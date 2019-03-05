@@ -1,0 +1,24 @@
+$dark-blue: #004A96;
+$light-blue: #E0E9F2;
+$slight-blue: #F6F6F8;
+$dark-grey: #707070;
+
+$black: #272727;
+$white: #fff;
+
+$primary-color: $dark-blue;
+$secondary-color: $slight-blue;
+$footer-color: $dark-grey;
+
+// classes
+
+.bg-primary {
+  background-color: $primary-color;
+}
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.negative {
+  color: $white;
+}

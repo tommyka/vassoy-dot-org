@@ -1,0 +1,26 @@
+.topbar {
+  &--site-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  &--navigation {
+    li:not(:first-child) {
+      margin-left: 1rem;
+    }
+    a {
+      display: block;
+      color: $black;
+      font-weight: 500;
+      border-bottom: 4px solid transparent;
+      padding: .5rem 0;
+      text-decoration: none;
+      &:hover {
+        border-bottom-color: $light-blue;
+      }
+      &:active, &[aria-current] {
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
+}

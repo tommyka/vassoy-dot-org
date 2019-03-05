@@ -1,0 +1,27 @@
+.article {
+  /*p, h1,h2,h3,h4,h5,h6 {
+    padding-left: 4rem;
+  }*/
+
+  h2:not(:first-child) {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  margin-bottom: 2rem;
+
+  .ingress {
+    font-size: 1.1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &--title {
+    margin-bottom: 0;
+  }
+  &--date {
+    font-weight: normal;
+    margin-bottom: 1.75rem;
+  }
+}

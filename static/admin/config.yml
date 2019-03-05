@@ -1,0 +1,65 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "aktuelt"
+    label: "Aktuelt"
+    folder: "src/pages/aktuelt"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "aktuelt-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "events"
+    label: "Events"
+    folder: "src/pages/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Event Date", name: "eventdate", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Static pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Fremside"
+        name: "fremside"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Facts", name: "fact", widget: "markdown"}
+          - {label: "Banner image", name: "banner", widget: "image"}
+
+      - file: "src/foreninger/index.md"
+        label: "Foreninger"
+        name: "foreninger"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sub-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - file: "src/ferje/index.md"
+        label: "Ferje"
+        name: "Ferje"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sub-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
