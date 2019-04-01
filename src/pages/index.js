@@ -26,10 +26,10 @@ export default class IndexPage extends React.Component {
                   <div dangerouslySetInnerHTML={{ __html: page.html }}>
                   </div>
                 </div>
-                <div className="col-4">
+                {false && <div className="col-4">
                   <h2>Facts om øya</h2>
                   <p dangerouslySetInnerHTML={{ __html: page.frontmatter.fact.replace(/\n/g, '<br>') }}></p>
-                </div>
+                </div>}
               </div>
             </div>
           </section>
