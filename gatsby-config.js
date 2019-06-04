@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Vassøy.org',
-    description: 'The island',
+    description: 'En av byøyerne ut for Stavanger',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

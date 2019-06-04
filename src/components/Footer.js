@@ -5,11 +5,11 @@ export const SiteFooter = () => {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            Vassoy.org er drevet av Vassøy beboerforening. En forening der arbeider for øyas beste.
+            Vassoy.org er drevet av Vassøy beboerforening. En forening som arbeider for øyas beste.
           </div>
           <div className="col-3">
             <h3>Kontakt</h3>
-            Tommy
+            <a href="mailto:styret@vassoy.org">Styret</a>
           </div>
         </div>
       </div>

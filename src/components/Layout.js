@@ -35,7 +35,7 @@ const TemplateWrapper = ({ children }) => (
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
+
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700'/>
         </Helmet>
         <Navbar />
@@ -45,5 +45,5 @@ const TemplateWrapper = ({ children }) => (
     )}
   />
 )
-
+// <!-- <meta property="og:image" content="/img/og-image.jpg" />-->
 export default TemplateWrapper
