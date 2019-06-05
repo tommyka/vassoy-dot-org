@@ -29,7 +29,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Event Date", name: "eventdate", widget: "datetime"}
+      - {label: "Event Date", name: "eventdate", widget: "datetime", dateFormat: "dd-mm-yy", timeFormat: 'HH:mm'}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
