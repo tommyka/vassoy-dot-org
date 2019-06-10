@@ -14,7 +14,7 @@ Bladet Vassøynytt utkommer 2 ganger i året.
 Utleie av Vassøystua, kontaktperson: Sissel Aanestad
 Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben,bingo, hobbykvelder, bursdag, fest og kurs. Dekketøy til 30 personer.
 
-Facebookside: [vassøystuas venner](https://www.facebook.com/groups/293240757368328/)
+Facebookside: [Vassøystuas venner](https://www.facebook.com/groups/293240757368328/)
 
 Medlemskap: 300,- i året
 
@@ -40,6 +40,8 @@ Idrettslaget jobber for et godt og aktivt miljø på Vassøy.
 Idrettslaget har gjennom stort arbeide fått godkjent og finansiert oppgradering av eksisterende grusbane til kunstgressbane som forventes utført på høsten 2019.
 
 Leie av lokalet, kontaktperson: Sigve
+
+[Facebookside](https://www.facebook.com/groups/220009571446373/)
 
 ## Vassøy Kapell
 
