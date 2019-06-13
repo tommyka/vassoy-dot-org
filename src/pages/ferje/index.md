@@ -6,7 +6,7 @@ title: Båt og ferje
 Vassøy har to båtforbindelser bilferja Rygerbuen (Stavanger-Vassøy) og hurtigbåt (byøyerne).
 I hverdagene er det ca to avganger i timen og i helgene ca en-to i timen.
 
-Båttidene kan ses på [kolumbus.no](https://www.kolumbus.no/ruter/bat/byoyene/) eller [Vassøy båtapp](http://boat.tommyka.dk/) som kan legges til hjemskjermen guide (lag guide)
+Båttidene kan ses på [kolumbus.no](https://www.kolumbus.no/ruter/bat/byoyene/) eller [Vassøy båtapp](http://boat.tommyka.dk/) som kan legges til hjemskjermen.
 
 ### Nattbåt
 Natt til lørdag og natt til søndag går den 1:30 og 3:00

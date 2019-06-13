@@ -16,7 +16,7 @@ Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben,bingo
 
 Facebookside: [vassøystuas venner](https://www.facebook.com/groups/293240757368328/)
 
-Medlemskap: 300,- i året
+Medlemskap: 350,- i året
 
 Kontakt: [styret@vassoy.org](mailto:styret@vassoy.org)
 
@@ -29,7 +29,7 @@ Idrettslaget jobber for et godt og aktivt miljø på Vassøy.
 - Spinning
 - Fotball senior
 - Fotball junior
-- Zumba
+- Styrketrening / Zumba
 - Innebandy
 - Volleyball
 - Kayakkgruppe
