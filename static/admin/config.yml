@@ -14,7 +14,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "aktuelt-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime", timeFormat: 'HH:mm'}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -28,8 +28,8 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Event Date", name: "eventdate", widget: "datetime", dateFormat: "dd-mm-yy", timeFormat: 'HH:mm'}
+      - {label: "Publish Date", name: "date", widget: "datetime", timeFormat: 'HH:mm', format: 'YYYY-MM-DDTHH:mm'}
+      - {label: "Event Date", name: "eventdate", widget: "datetime", dateFormat: "DD/MM/YY", timeFormat: 'HH:mm', format: 'YYYY-MM-DDTHH:mm'}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
