@@ -1,8 +1,18 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+
+const numberfix = (numb, digs = 2) => {
+  let numstr = String(numb);
+
+  while (numstr.length < digs) {
+    numstr = '0'+numstr;
+  }
+
+  return numstr;
+}
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,7 +21,13 @@ export default class IndexPage extends React.Component {
     const { edges: news } = data.news
     const { edges: events } = data.events
 
-
+    const now = new Date();
+    const today = `${now.getFullYear()}${numberfix(now.getMonth()+1)}${numberfix(now.getDate())}`;
+    
+    const newEvents = events.filter(({node:post}) => {
+      return post.frontmatter.timecode > today
+    });
+    
 
     return (
       <Layout>
@@ -62,7 +78,7 @@ export default class IndexPage extends React.Component {
               <div className="col-6">
                 <h2 className="align-center">Hva skjer?</h2>
                 <ul className="no-list">
-                  {events.map(({node: post}) => {
+                  {newEvents.map(({node: post}) => {
                     const dateSplit = post.frontmatter.eventdate.split(':');
 
                     return (
@@ -128,6 +144,7 @@ export const pageQuery = graphql`
     news:allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "aktuelt-post" } }}
+      limit: 3
     ) {
       edges {
         node {
@@ -165,6 +182,7 @@ export const pageQuery = graphql`
             title
             templateKey
             eventdate(formatString: "MMMM:DD:HH:mm")
+            timecode:eventdate(formatString: "YYYYMMDD")
             location
           }
         }

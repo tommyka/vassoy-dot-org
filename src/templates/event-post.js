@@ -16,12 +16,15 @@ const EventPost = ({ data }) => {
         description={post.frontmatter.description}
         location={post.frontmatter.location}
         date={post.frontmatter.eventdate}
+        image={post.frontmatter.image}
         helmet={
           <Helmet
-          titleTemplate="%s | Event"
+          titleTemplate="%s | Nyheter"
           >
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{post.frontmatter.title}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta property="og:title" content={`${post.frontmatter.title}`}></meta>
+            <meta property="og:image" content={`${post.frontmatter.image.childImageSharp.fixed.src}`}></meta>
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -49,6 +52,16 @@ export const pageQuery = graphql`
         title
         description
         location
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1024, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+            fixed(width: 400) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
   }

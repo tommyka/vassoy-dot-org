@@ -41,7 +41,7 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  image: PropTypes.string,
+  image: PropType.object,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }

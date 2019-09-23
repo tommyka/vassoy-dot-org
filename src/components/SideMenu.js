@@ -7,7 +7,7 @@ const SideMenu = ( {list} ) => {
     <h3>Andre nyheter</h3>
     { (list && list.length !== 0) &&
       <ul className="flat-list">
-        { list.map((item) => <li className="sidemenu--item">
+        { list.map((item) => <li key={item.fields.slug} className="sidemenu--item">
           <Link to={item.fields.slug}>{item.frontmatter.title}</Link>
           <div className="small">{item.frontmatter.date}</div>
         </li>)}
