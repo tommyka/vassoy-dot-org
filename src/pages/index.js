@@ -57,6 +57,7 @@ export default class IndexPage extends React.Component {
                     </li>
                   ))}
                 </ul>)}
+                <Link>Ander nyheter</Link>
               </div>
 
               <div className="col-6">
@@ -126,6 +127,7 @@ export const pageQuery = graphql`
       }
   	},
     news:allMarkdownRemark(
+      limit: 3,
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "aktuelt-post" } }}
     ) {
