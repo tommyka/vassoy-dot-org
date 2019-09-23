@@ -2,7 +2,7 @@
 templateKey: event-post
 title: Barnekafe
 date: 2019-09-23T14:00:15.384Z
-eventdate: 2019-09-29T16:00:15.398Z
+eventdate: 2019-09-29T11:00:15.398Z
 location: Vassøystua
 image: /img/barnekafe.jpg
 description: Barnekafe med perling på Vassøystua.

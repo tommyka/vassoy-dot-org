@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
+  console.log('image', image);
   return (
     <section className="section">
       {helmet || ''}
@@ -41,7 +41,7 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  image: PropType.object,
+  image: PropTypes.object,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }
