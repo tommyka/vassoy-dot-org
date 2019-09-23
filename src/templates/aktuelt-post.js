@@ -77,8 +77,10 @@ const BlogPost = ({ data }) => {
           <Helmet
           titleTemplate="%s | Nyheter"
           >
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{post.frontmatter.title}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta property="og:title" content={`${post.frontmatter.title}`}></meta>
+            <meta property="og:image" content={`${post.frontmatter.image.childImageSharp.fixed.src}`}></meta>
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -109,6 +111,9 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 1024, quality: 90) {
               ...GatsbyImageSharpFluid
+            }
+            fixed(width: 400) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
