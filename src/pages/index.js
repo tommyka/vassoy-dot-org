@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import NewsItem from '../components/lists/NewsItem';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -39,25 +40,15 @@ export default class IndexPage extends React.Component {
                 <h2 className="align-center">Aktuelt</h2>
                 { news && (<ul className="no-list">
                   {news.map(({node: post}) => (
-                    <li className="bg-secondary list-item" key={post.id}>
-                      <article className="flex vcenter">
-                        { post.frontmatter.title && <div className="list-item--image">
-                        { post.frontmatter.image && <PreviewCompatibleImage imageInfo={post.frontmatter.image} width={120}/> }
-                        </div> }
-                        <div className="grow content">
-                          <div className="small list-item--date">{post.frontmatter.date}</div>
-                          <Link className="has-text-primary" to={post.fields.slug}>
-                            <h3>{post.frontmatter.title}</h3>
-                          </Link>
-                          <p className="small">
-                            {post.excerpt}
-                          </p>
-                        </div>
-                      </article>
-                    </li>
+                    <NewsItem key={post.id}
+                              title={post.frontmatter.title}
+                              image={post.frontmatter.image}
+                              date={post.frontmatter.date}
+                              slug={post.fields.slug}
+                              excerpt={post.excerpt} />
                   ))}
                 </ul>)}
-                <Link>Ander nyheter</Link>
+                <Link to="/arkiv">Se alle nyheter</Link>
               </div>
 
               <div className="col-6">
