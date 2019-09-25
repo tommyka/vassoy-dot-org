@@ -1,4 +1,5 @@
 import React from 'react'
+import get from 'lodash.get';
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
@@ -7,6 +8,7 @@ import { BlogPostTemplate, BlogLayout } from './aktuelt-post';
 
 const EventPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const image = get(post, 'frontmatter.image.childImageSharp.fixed.src');
 
   return (
     <BlogLayout>
@@ -24,7 +26,7 @@ const EventPost = ({ data }) => {
             <title>{post.frontmatter.title}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
             <meta property="og:title" content={`${post.frontmatter.title}`}></meta>
-            <meta property="og:image" content={`${post.frontmatter.image.childImageSharp.fixed.src}`}></meta>
+            {image && <meta property="og:image" content={image}></meta>}
           </Helmet>
         }
         tags={post.frontmatter.tags}
