@@ -8,9 +8,13 @@ export default (props) => {
     return;
   }
 
-  return <ul>
+  return <ul className="paging no-list">
     {Array.from({length:props.pages}, (value, index) => (
-      <li><Link to={props.urlFunc ? props.urlFunc(index) : urlResolution(index)}>{index+1}</Link></li>
+      <li className="paging--item">
+        {index+1 === props.selected ?
+          <span>{index+1}</span> :
+        <Link to={props.urlFunc ? props.urlFunc(index) : urlResolution(index)}>{index+1}</Link>}
+      </li>
       ))}
   </ul>
 }

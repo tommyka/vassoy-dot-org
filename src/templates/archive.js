@@ -15,12 +15,17 @@ const archiveUrl = (index) => {
 export default class ArchiveList extends React.Component {
   render() {
     const {pageContext, data} = this.props;
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.allMarkdownRemark.edges;
+
+    const title = `Aktuelt arkiv side ${pageContext.currentPage}`;
+
     return (
       <Layout>
+        <Helmet>
+          <title>{title}</title>
+        </Helmet>
         <section className="container band">
-          <h1>Aktuelt arkiv</h1>
-          <div>Side {pageContext.currentPage}</div>
+          <h1>{title}</h1>
           <div className="row row--min-gutter">
             <ul className="no-list">
             {posts.map(({ node: post }) => (
@@ -32,7 +37,7 @@ export default class ArchiveList extends React.Component {
             ))}
             </ul>
           </div>
-          {pageContext.numPages > 1 && <Pagination pages={pageContext.numPages}
+          {pageContext.numPages > 1 && <Pagination selected={pageContext.currentPage} pages={pageContext.numPages}
               current={pageContext.currentPage}
               urlFunc={archiveUrl}/> }
         </section>

@@ -48,7 +48,7 @@ export default class IndexPage extends React.Component {
                               excerpt={post.excerpt} />
                   ))}
                 </ul>)}
-                <Link to="/arkiv">Se alle nyheter</Link>
+                <Link className="bg-secondary list-item archive-link" to="/arkiv">Se alle nyheter</Link>
               </div>
 
               <div className="col-6">

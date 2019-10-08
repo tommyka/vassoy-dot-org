@@ -47,7 +47,7 @@ exports.createPages = ({ actions, graphql }) => {
     })
 
     const newsPosts = posts.filter(edge => edge.node.frontmatter.templateKey === 'aktuelt-post')
-    const postsPerPage = 2
+    const postsPerPage = 10;
     const numPages = Math.ceil(newsPosts.length / postsPerPage)
     for(let k = 0; k < numPages; k++) {
       createPage({
