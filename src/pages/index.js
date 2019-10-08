@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
-import NewsItem from '../components/lists/NewsItem';
+import NewsItem from '../components/lists/Newsitem';
 
 export default class IndexPage extends React.Component {
   render() {

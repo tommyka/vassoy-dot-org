@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import NewsItem from '../components/lists/NewsItem'
+import NewsItem from '../components/lists/Newsitem'
 import Pagination from '../components/lists/Pagination'
 
 const archiveUrl = (index) => {
