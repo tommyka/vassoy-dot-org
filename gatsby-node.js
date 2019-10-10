@@ -46,6 +46,22 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
+    const newsPosts = posts.filter(edge => edge.node.frontmatter.templateKey === 'aktuelt-post')
+    const postsPerPage = 10;
+    const numPages = Math.ceil(newsPosts.length / postsPerPage)
+    for(let k = 0; k < numPages; k++) {
+      createPage({
+        path: k === 0 ? `/arkiv` : `/arkiv/${k + 1}`,
+        component: path.resolve("src/templates/archive.js"),
+        context: {
+          limit: postsPerPage,
+          skip: k * postsPerPage,
+          numPages,
+          currentPage: k + 1,
+        },
+      })
+    }
+
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`

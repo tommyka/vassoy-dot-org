@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import NewsItem from '../components/lists/Newsitem';
 
 const numberfix = (numb, digs = 2) => {
   let numstr = String(numb);
@@ -23,11 +24,11 @@ export default class IndexPage extends React.Component {
 
     const now = new Date();
     const today = `${now.getFullYear()}${numberfix(now.getMonth()+1)}${numberfix(now.getDate())}`;
-    
+
     const newEvents = events.filter(({node:post}) => {
       return post.frontmatter.timecode > today
     });
-    
+
 
     return (
       <Layout>
@@ -55,24 +56,15 @@ export default class IndexPage extends React.Component {
                 <h2 className="align-center">Aktuelt</h2>
                 { news && (<ul className="no-list">
                   {news.map(({node: post}) => (
-                    <li className="bg-secondary list-item" key={post.id}>
-                      <article className="flex vcenter">
-                        { post.frontmatter.title && <div className="list-item--image">
-                        { post.frontmatter.image && <PreviewCompatibleImage imageInfo={post.frontmatter.image} width={120}/> }
-                        </div> }
-                        <div className="grow content">
-                          <div className="small list-item--date">{post.frontmatter.date}</div>
-                          <Link className="has-text-primary" to={post.fields.slug}>
-                            <h3>{post.frontmatter.title}</h3>
-                          </Link>
-                          <p className="small">
-                            {post.excerpt}
-                          </p>
-                        </div>
-                      </article>
-                    </li>
+                    <NewsItem key={post.id}
+                              title={post.frontmatter.title}
+                              image={post.frontmatter.image}
+                              date={post.frontmatter.date}
+                              slug={post.fields.slug}
+                              excerpt={post.excerpt} />
                   ))}
                 </ul>)}
+                <Link className="bg-secondary list-item archive-link" to="/arkiv">Se alle nyheter</Link>
               </div>
 
               <div className="col-6">
@@ -142,9 +134,9 @@ export const pageQuery = graphql`
       }
   	},
     news:allMarkdownRemark(
+      limit: 3,
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "aktuelt-post" } }}
-      limit: 3
     ) {
       edges {
         node {
