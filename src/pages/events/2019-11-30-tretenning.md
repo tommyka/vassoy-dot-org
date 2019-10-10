@@ -8,6 +8,12 @@ image: /img/julegran.jpg
 description: Tradisjonen tro blir der tenning av juletret foran vassøystua første adventssøndag.
 ---
 
-Søndag 30. byder Vassøybeboerforening til grødspising, lodtrekning og tenning av julegrennen.
+Søndag 30. byder Vassøybeboerforening til GRØTFEST i gymsalen på skolen og tenning av julegran ved Vassøystua.
 
-Dørene åpner kl 15:00
+Gymsalen kl 15: Grøt, saft og gløgg.
+
+Utlodning med flotte gevinster
+
+Etterpå går vi til Vassøystua der julegrana tennes.
+
+Barna får tilslutt utdelt en pose med litt godt.
