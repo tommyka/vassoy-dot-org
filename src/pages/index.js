@@ -24,11 +24,11 @@ export default class IndexPage extends React.Component {
 
     const now = new Date();
     const today = `${now.getFullYear()}${numberfix(now.getMonth()+1)}${numberfix(now.getDate())}`;
-    
+
     const newEvents = events.filter(({node:post}) => {
       return post.frontmatter.timecode > today
     });
-    
+
 
     return (
       <Layout>
@@ -137,7 +137,6 @@ export const pageQuery = graphql`
       limit: 3,
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "aktuelt-post" } }}
-      limit: 3
     ) {
       edges {
         node {
