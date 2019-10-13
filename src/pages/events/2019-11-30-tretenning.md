@@ -10,10 +10,12 @@ description: Tradisjonen tro blir der tenning av juletret foran vassøystua før
 
 Søndag 30. byder Vassøybeboerforening til GRØTFEST i gymsalen på skolen og tenning av julegran ved Vassøystua.
 
-Gymsalen kl 15: Grøt, saft og gløgg.
+Gymsalen kl 16: Grøt, saft og gløgg.
 
 Utlodning med flotte gevinster
 
-Etterpå går vi til Vassøystua der julegrana tennes.
+Etterpå går vi til Vassøystua der julegrana tennes og korpset spiller.
 
 Barna får tilslutt utdelt en pose med litt godt.
+
+Arrengementet er gratis.
