@@ -50,7 +50,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        eventdate(formatString: "MMMM DD, YYYY")
+        eventdate(formatString: "MMMM DD, YYYY - HH:mm")
         title
         description
         location
