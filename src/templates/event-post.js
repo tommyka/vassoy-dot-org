@@ -26,6 +26,8 @@ const EventPost = ({ data }) => {
             <title>{post.frontmatter.title}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
             <meta property="og:title" content={`${post.frontmatter.title}`}></meta>
+            <meta property="og:type" content="event"></meta>
+            <meta property="og:event.date" content={post.frontmatter.facebookdate}></meta>
             {image && <meta property="og:image" content={image}></meta>}
           </Helmet>
         }
@@ -51,6 +53,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         eventdate(formatString: "MMMM DD, YYYY - HH:mm")
+        facebookdate:eventdate(formatString: "YYYY-MM-DD")
         title
         description
         location
