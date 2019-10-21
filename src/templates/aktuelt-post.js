@@ -47,7 +47,7 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-export const BlogLayout = ({children, list}) => {
+export const BlogLayout = ({children, list, listTitle}) => {
   return <Layout>
     <img className="banner--post" alt="" role="presentation" src="/assets/banner.svg"/>
     <div className="container">
@@ -56,7 +56,7 @@ export const BlogLayout = ({children, list}) => {
           {children}
         </div>
         <div className="col-3 col-md-12">
-          {list && <SideMenu list={list}/> }
+          {list && <SideMenu list={list} title={listTitle}/> }
         </div>
       </div>
     </div>

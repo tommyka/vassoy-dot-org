@@ -5,34 +5,41 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import { HTMLContent } from '../components/Content'
 import { BlogPostTemplate, BlogLayout } from './aktuelt-post';
+import { Today } from '../services/date/timecode';
 
 const EventPost = ({ data }) => {
-  const { markdownRemark: post } = data
-  const image = get(post, 'frontmatter.image.childImageSharp.fixed.src');
+  const { event, events } = data
+  const edges = events && events.edges ? events.edges : [];
+  const image = get(event, 'frontmatter.image.childImageSharp.fixed.src');
 
+  const today = Today();
+
+  const items = edges.filter(({node:post}) => {
+    return post.frontmatter.timecode > today
+  });
   return (
-    <BlogLayout>
+    <BlogLayout list={items.map(item => item.node)} listTitle="Andre arrengementer">
       <BlogPostTemplate
-        content={post.html}
+        content={event.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        location={post.frontmatter.location}
-        date={post.frontmatter.eventdate}
-        image={post.frontmatter.image}
+        description={event.frontmatter.description}
+        location={event.frontmatter.location}
+        date={event.frontmatter.eventdate}
+        image={event.frontmatter.image}
         helmet={
           <Helmet
           titleTemplate="%s | Nyheter"
           >
-            <title>{post.frontmatter.title}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta property="og:title" content={`${post.frontmatter.title}`}></meta>
+            <title>{event.frontmatter.title}</title>
+            <meta name="description" content={`${event.frontmatter.description}`} />
+            <meta property="og:title" content={`${event.frontmatter.title}`}></meta>
             <meta property="og:type" content="event"></meta>
-            <meta property="og:event.date" content={post.frontmatter.facebookdate}></meta>
+            <meta property="og:event.date" content={event.frontmatter.facebookdate}></meta>
             {image && <meta property="og:image" content={image}></meta>}
           </Helmet>
         }
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        tags={event.frontmatter.tags}
+        title={event.frontmatter.title}
         />
     </BlogLayout>
   )
@@ -48,7 +55,7 @@ export default EventPost
 
 export const pageQuery = graphql`
   query EventPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    event:markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
@@ -65,6 +72,26 @@ export const pageQuery = graphql`
             fixed(width: 400) {
               ...GatsbyImageSharpFixed
             }
+          }
+        }
+      }
+    },
+    events: allMarkdownRemark(
+      limit: 3,
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { frontmatter: { templateKey: { eq: "event-post" } }, id: {ne: $id}}
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title,
+            templateKey
+            timecode:eventdate(formatString: "YYYYMMDD")
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

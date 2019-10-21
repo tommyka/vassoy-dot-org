@@ -4,16 +4,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import NewsItem from '../components/lists/Newsitem';
+import { Today } from '../services/date/timecode';
 
-const numberfix = (numb, digs = 2) => {
-  let numstr = String(numb);
-
-  while (numstr.length < digs) {
-    numstr = '0'+numstr;
-  }
-
-  return numstr;
-}
 
 export default class IndexPage extends React.Component {
   render() {
@@ -22,8 +14,7 @@ export default class IndexPage extends React.Component {
     const { edges: news } = data.news
     const { edges: events } = data.events
 
-    const now = new Date();
-    const today = `${now.getFullYear()}${numberfix(now.getMonth()+1)}${numberfix(now.getDate())}`;
+    const today = Today();
 
     const newEvents = events.filter(({node:post}) => {
       return post.frontmatter.timecode > today
