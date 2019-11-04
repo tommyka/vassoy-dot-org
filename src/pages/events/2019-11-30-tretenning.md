@@ -19,3 +19,5 @@ Etterpå går vi til Vassøystua der julegrana tennes og korpset spiller.
 Barna får tilslutt utdelt en pose med litt godt.
 
 Arrengementet er gratis.
+
+p.s. Alle må ta av skoene når de skal inn i gymsalen
