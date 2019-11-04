@@ -8,7 +8,7 @@ tags:
   - Vassoynytt
 ---
 
-I den nye ruteplanen er der kommet en ny avgang kl **13:15** fra Vassøy om søndagene.
+I den nye ruteplanen er der kommet en ny avgang kl **12:45** fra Stavanger og **13:15** fra Vassøy om søndagene.
 
 **Lars Erik Tveit** har følgende begryndels for tidspunktet
 
