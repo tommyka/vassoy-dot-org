@@ -1,8 +1,8 @@
 ---
 templateKey: aktuelt-post
-title: Ruteendring for rygerbuen om søndagen
+title: Ruteendring for Rygerbuen om søndagen
 date: 2019-11-03T20:00:00.000Z
-description: 1. Januar treder ny ruteplan for rygerbuen i kraft
+description: 1. Januar trer ny ruteplan for Rygerbuen i kraft
 image: /img/rygerbuen.jpg
 tags:
   - Vassoynytt
