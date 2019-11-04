@@ -30,3 +30,29 @@ a, a:link {
 a:hover {
   text-decoration: none;
 }
+
+blockquote {
+  position: relative;
+  margin-left: 0;
+  padding: $site-padding $site-padding*2 $site-padding $site-padding*3;
+  background-color: $slight-blue;
+
+  p {
+    margin: 0;
+  }
+  p + p {
+    margin-top: $site-padding;
+  }
+  span {
+    font-weight: bold;
+  }
+  &::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#78C0A8;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+}
