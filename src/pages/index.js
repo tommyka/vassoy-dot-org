@@ -20,7 +20,6 @@ export default class IndexPage extends React.Component {
       return post.frontmatter.timecode > today
     });
 
-
     return (
       <Layout>
         {page.frontmatter.banner && <PreviewCompatibleImage imageInfo={page.frontmatter.banner}/> }
@@ -52,7 +51,7 @@ export default class IndexPage extends React.Component {
                               image={post.frontmatter.image}
                               date={post.frontmatter.date}
                               slug={post.fields.slug}
-                              excerpt={post.excerpt} />
+                              excerpt={post.frontmatter.description} />
                   ))}
                 </ul>)}
                 <Link className="bg-secondary list-item archive-link" to="/arkiv">Se alle nyheter</Link>
@@ -137,7 +136,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            title
+            title,
+            description,
             image {
               childImageSharp {
                 fluid(maxWidth: 120, maxHeight: 120, quality: 64) {
