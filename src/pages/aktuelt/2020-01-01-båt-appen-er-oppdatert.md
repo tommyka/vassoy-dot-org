@@ -15,7 +15,7 @@ De nye rutene er
 
 Hvis de ikke viser i appen så prøve å lukk ned og åpne på nytt.
 
-For å legge til "appen" på telefon: gå til [ferje.vassøy.org](ferje.vassøy.org) og legg til hjemskjerm.
+For å legge til "appen" på telefon: gå til [ferje.vassoy.org](https://ferje.vassoy.org) og legg til hjemskjerm.
 
 Her er en [guide](https://www.vi.no/teknologi/slik-legger-du-til-favorittnettsider-pa-hjemskjermen/70297324) for å legge til hjemskjermen.
 
