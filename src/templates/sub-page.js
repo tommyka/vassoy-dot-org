@@ -2,6 +2,7 @@ import React from 'react'
 import Content, { HTMLContent } from '../components/Content'
 import PropTypes from 'prop-types'
 import { BlogLayout } from './aktuelt-post';
+import Helmet from 'react-helmet';
 
 export const PageTemplate = ({title, content, contentComponent}) => {
   const PostContent = contentComponent || Content
@@ -17,11 +18,13 @@ PageTemplate.propTypes = {
 }
 
 const page = ({data}) => {
-
+  const title = data.page.frontmatter.title;
   return <BlogLayout>
+    <Helmet title={`${title} - Vassoy.org`}>
+    </Helmet>
         <PageTemplate
           contentComponent={HTMLContent}
-          title={data.page.frontmatter.title}
+          title={title}
           content={data.page.html}/>
     </BlogLayout>
 }

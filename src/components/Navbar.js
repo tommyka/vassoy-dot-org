@@ -10,6 +10,9 @@ const Navbar = class extends React.Component {
       </div>
       <nav className="grow align-right">
         <ul className="flat-list topbar--navigation">
+        <li>
+            <Link to="/beredskap">Beredskap</Link>
+          </li>
           <li>
             <Link to="/ferje">Ferje</Link>
           </li>
