@@ -12,12 +12,16 @@ Der 3 hjertestartere på Vassøy.
 
 - En er nord på Nordstrandveien 39 ved garasjen.
 - På branddepoet (tilgjenglig for brannpersonalet)
-- Sørstrandveien 90
+- Sørstrandveien 905
 
 Plassering illusteret i kart ned forbi
 
 ## "Ambulanse"
 
-Sigur har en bil som brukes som *ambulanse* hvis der er noen som trenger å fraktes til helikopter eller lekebåten. Hvis du har lyst å støtte ambulanse bilen...
+Vassøy har egen ambulanse/syketransport bil til å hjelpe å få folk til Rygerdoktor eller eventuelt helikopter
+
+Ordningen på Vassøy er at trenger du akutt hjelp må du ringe 113 eller legevakten.
+
+Mannskapet på Rygerdoktoren eller Akuttmottaket ringer Sigurd Helgesen og ber om hjelp til transport når det er nødvendig. All kontakt skjer gjennom disse kanalene.
 
 ![Hjertestartere](kart_2.svg)
