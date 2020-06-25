@@ -13,12 +13,8 @@ Vara: Charlotte, Øyvind
 
 Bladet Vassøynytt utkommer 2 ganger i året.
 
-Utleie av Vassøystua, kontaktperson: Charlotte Kjær Tednes [leie@vassoy.org](mailto:leie@vassoy.org) [47 35 57 75](tel:47355775)
-Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben,bingo, hobbykvelder, bursdag, fest og kurs. Dekketøy til 35/40 personer.
-
-Aktivitetskalender for vassøystua
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FCopenhagen&amp;src=NDk4OGdhNTJlbHNyMDl2bGVlbDRsOGs0OGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23009688&amp;hl=no&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showDate=1" style="border-width:0" width="600" height="300" frameborder="0" scrolling="no"></iframe>
+Beboerforeningen ivaretar Vassøystua som tidliger har været skole og barnehage på øya.<br>
+Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben, bingo, hobbykvelder, bursdag, fest og kurs. For utleie gå til siden for [Vassøystua](/vassoystua).
 
 Facebookside: [Vassøystuas venner](https://www.facebook.com/groups/293240757368328/)
 
