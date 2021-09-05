@@ -1,6 +1,6 @@
 ---
 templateKey: "sub-page"
-path: /vassoystua
+path: /Utleie
 title: Utleie
 ---
 
