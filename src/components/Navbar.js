@@ -18,7 +18,7 @@ const Navbar = class extends React.Component {
                 <Link to="/ferje">Ferje</Link>
               </li>
               <li>
-                <Link to="/vassoystua">Vassøystua</Link>
+                <Link to="/utleie">Utleie</Link>
               </li>
               <li>
                 <Link to="/foreninger">Foreninger</Link>

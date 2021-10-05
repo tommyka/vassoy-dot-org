@@ -1,10 +1,10 @@
 ---
 templateKey: "sub-page"
-path: /vassoystua
-title: Vassøystua
+path: /Utleie
+title: Utleie
 ---
 
-## Utleie av Vassøystua:
+## Vassøystua:
 
 Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben, bingo, hobbykvelder, bursdag, fest og kurs.
 
@@ -26,11 +26,27 @@ E-post: [leie@vassoy.org](mailto:leie@vassoy.org)<br>
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FCopenhagen&amp;src=NDk4OGdhNTJlbHNyMDl2bGVlbDRsOGs0OGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23009688&amp;hl=no&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showDate=1" style="border-width:0" width="600" height="300" frameborder="0" scrolling="no"></iframe>
 
-#### Utleie av utstyr for medlemmer:
+## Utstyr:
 
-- Kvistkvern: 50,- pr. døgn.
-- Kantklipper: 50,- pr. døgn.
-- Prampack: 75,- pr. uke.
+Medlemer har mulighet å leie utstyr.
+
+#### Kvistkvern
+
+![Kvistkvern](/img/kvistkvern.jpg)
+
+Kvistkvernen kan leies for 50,- pr. døgn.
+
+#### Kantklipper
+
+![Kantklipper](/img/kantklipper.jpg)
+
+Leie 50,- pr. døgn.
+
+#### Prampak
+
+![Prampak](/img/prampak.jpg)
+
+Prampack: 75,- pr. uke.
 
 #### Betaling
 
