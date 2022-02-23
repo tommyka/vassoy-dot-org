@@ -4,7 +4,7 @@ title: Julemarked på butikken
 date: 2019-10-08T14:00:15.384Z
 eventdate: 2019-11-30T11:00:15.398Z
 location: Butikken
-image: /img/julemarked.png
+image: /img/julemarked.jpg
 description: Vi rydder lageret vårt og Vassøys kreative og flinke damer selger sine flotte håndarbeid og produkter.
 ---
 
