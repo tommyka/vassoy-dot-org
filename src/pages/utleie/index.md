@@ -17,7 +17,6 @@ Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben, bing
 - Barnebursdag: 250,- / 350,-
 
 Ukentlig sammenkomst: Ta kontakt for avtale.<br>
-Utvask kan bestilles i tillegg.<br>
 Kontaktperson: Charlotte Kjær Tednes<br>
 Mobil: [47 35 57 75](tel:47355775)<br>
 E-post: [leie@vassoy.org](mailto:leie@vassoy.org)<br>
