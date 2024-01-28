@@ -12,9 +12,9 @@ Stua kan brukes til små og større samlinger, ungdomsklubb, seniorklubben, bing
 
 #### Pris for medlem / ikke medlem
 
-- 1 dag: 500,- / 750,-
-- Hel helg: 1000,- / 1250,-
-- Barnebursdag: 250,- / 350,-
+- 1 dag: 500,- / 1000,-
+- Hel helg: 1000,- / 2000,-
+- Barnebursdag: 250,- / 500,-
 
 Ukentlig sammenkomst: Ta kontakt for avtale.<br>
 Kontaktperson: Charlotte Kjær Tednes<br>
